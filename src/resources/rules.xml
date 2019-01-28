@@ -1,30 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Movies>
-    <Movie id="house_of_the_dead">
-        <Description value="House of the Dead"/>
-        <Datas>
-            <Data id="rating">2.0</Data>
-            <Data id="genre">horror</Data>
-            <Data id="runtime">90</Data>
-            <Data id="animation">false</Data>
-	    <Data id="multiple language">English</Data>
-        </Datas>
-    </Movie>
+<Rules>
+    <Rule id="rating">
+        <Question>Do you want to watch high rated movie?</Question>
+        <Answer>
+            <Selection value="true">
+                <SingleValue value="yes"/>
+            </Selection>
+            <Selection value="false">
+                <SingleValue value="no"/>
+            </Selection>
+        </Answer>
+    </Rule>
     ...
-    <Movie id="mokka">
-        <Description value="Opel Mokka"/>
-        <Datas>
-            <Data id="family">true</Data>
-            <Data id="money">false</Data>
-            <Data id="comfort">false</Data>
-            <Data id="luxury">true</Data>
-        </Datas>
-    </Movie>
+    <Rule id="genre">
+        <Question>Are you tremulous?</Question>
+        <Answer>
+            <Selection value="true">
+                <SingleValue value="yes"/>
+            </Selection>
+            <Selection value="false">
+                <SingleValue value="horror"/>
+            </Selection>
+        </Answer>
+    </Rule>
+   ...
+    <Rule id="genre">
+        <Question>Want to see blood?</Question>
+        <Answer>
+            <Selection value="true">
+                <SingleValue value="action"/>
+            </Selection>
+            <Selection value="false">
+                <SingleValue value="no"/>
+            </Selection>
+        </Answer>
+    </Rule>
     ...
-    <Movie id="lada">
-        <Description value="Lada"/>
-        <Datas>
-            
-        </Datas>
-    </Movie>
-</Movies>
+    <Rule id="genre">
+        <Question>Are you a girl?</Question>
+        <Answer>
+            <Selection value="true">
+                <SingleValue value="romantic"/>
+            </Selection>
+            <Selection value="false">
+                <SingleValue value="no"/>
+            </Selection>
+        </Answer>
+    </Rule>
+    ...
+    <Rule id="genre">
+        <Question>Want to go a journey, but you are a lazy dumbass?</Question>
+        <Answer>
+            <Selection value="true">
+                <SingleValue value="adventure"/>
+            </Selection>
+            <Selection value="false">
+                <SingleValue value="no"/>
+            </Selection>
+        </Answer>
+    </Rule>
+    ...
+    <Rule id="genre">
+        <Question>Alright man, do you want to laught?</Question>
+        <Answer>
+            <Selection value="true">
+                <SingleValue value="comedy"/>
+            </Selection>
+            <Selection value="false">
+                <SingleValue value="no"/>
+            </Selection>
+        </Answer>
+    </Rule>
+    ...
+    <Rule id="playtime">
+        <Question>Have you got 2 hours for a movie?</Question>
+        <Answer>
+            <Selection value="true">
+                <MultipleValue value="yes"/>
+            </Selection>
+            <Selection value="false">
+                <MultipleValue value="no"/>
+            </Selection>
+        </Answer>
+    </Rule>
+    ...
+    <Rule id="animation">
+        <Question>Do you feel yoursef as a kid?</Question>
+        <Answer>
+            <Selection value="true">
+                <MultipleValue value="yes"/>
+            </Selection>
+            <Selection value="false">
+                <MultipleValue value="no"/>
+            </Selection>
+        </Answer>
+    </Rule>
+    ...
+    <Rule id="playtime">
+        <Question>Do you speak other language except hungary?</Question>
+        <Answer>
+            <Selection value="true">
+                <MultipleValue value="yes"/>
+            </Selection>
+            <Selection value="false">
+                <MultipleValue value="no"/>
+            </Selection>
+        </Answer>
+    </Rule>
+</Rules>
