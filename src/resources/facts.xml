@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Movies>
+    <Movie id="house_of_the_dead">
+        <Description value="House of the Dead"/>
+        <Datas>
+            <Data id="rating">2.0</Data>
+            <Data id="genre">horror</Data>
+            <Data id="runtime">90</Data>
+            <Data id="animation">false</Data>
+	    <Data id="multiple language">English</Data>
+        </Datas>
+    </Movie>
+    ...
+    <Movie id="">
+        <Description value=""/>
+        <Datas>
+            
+        </Datas>
+    </Movie>
+    ...
+    <Movie id="">
+        <Description value=""/>
+        <Datas>
+            
+        </Datas>
+    </Movie>
+</Movies>
