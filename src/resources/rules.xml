@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Rules>
     <Rule id="rating">
-        <Question>Do you want to watch high rated movie?</Question>
+        <Question>Do you want to watch a high rated movie?</Question>
         <Answer>
             <Selection value="true">
                 <SingleValue value="yes"/>
@@ -13,61 +13,13 @@
     </Rule>
     ...
     <Rule id="genre">
-        <Question>Are you tremulous?</Question>
+        <Question>Want to see family friendly?</Question>
         <Answer>
             <Selection value="true">
-                <SingleValue value="yes"/>
+                <MultipleValue value="yes"/>
             </Selection>
             <Selection value="false">
-                <SingleValue value="no"/>
-            </Selection>
-        </Answer>
-    </Rule>
-   ...
-    <Rule id="genre">
-        <Question>Want to see blood?</Question>
-        <Answer>
-            <Selection value="true">
-                <SingleValue value="yes"/>
-            </Selection>
-            <Selection value="false">
-                <SingleValue value="no"/>
-            </Selection>
-        </Answer>
-    </Rule>
-    ...
-    <Rule id="genre">
-        <Question>Are you a girl?</Question>
-        <Answer>
-            <Selection value="true">
-                <SingleValue value="yes"/>
-            </Selection>
-            <Selection value="false">
-                <SingleValue value="no"/>
-            </Selection>
-        </Answer>
-    </Rule>
-    ...
-    <Rule id="genre">
-        <Question>Want to go a journey, but you are a lazy dumbass?</Question>
-        <Answer>
-            <Selection value="true">
-                <SingleValue value="yes"/>
-            </Selection>
-            <Selection value="false">
-                <SingleValue value="no"/>
-            </Selection>
-        </Answer>
-    </Rule>
-    ...
-    <Rule id="genre">
-        <Question>Alright man, do you want to laught?</Question>
-        <Answer>
-            <Selection value="true">
-                <SingleValue value="yes"/>
-            </Selection>
-            <Selection value="false">
-                <SingleValue value="no"/>
+                <MultipleValue value="no"/>
             </Selection>
         </Answer>
     </Rule>
@@ -76,34 +28,34 @@
         <Question>Have you got 2 hours for a movie?</Question>
         <Answer>
             <Selection value="true">
-                <MultipleValue value="yes"/>
+                <SingleValue value="yes"/>
             </Selection>
             <Selection value="false">
-                <MultipleValue value="no"/>
+                <SingleValue value="no"/>
             </Selection>
         </Answer>
     </Rule>
     ...
     <Rule id="animation">
-        <Question>Do you feel yoursef as a kid?</Question>
+        <Question>Would you like a live-action movie?</Question>
         <Answer>
             <Selection value="true">
-                <MultipleValue value="yes"/>
+                <SingleValue value="yes"/>
             </Selection>
             <Selection value="false">
-                <MultipleValue value="no"/>
+                <SingleValue value="no"/>
             </Selection>
         </Answer>
     </Rule>
     ...
-    <Rule id="playtime">
-        <Question>Do you speak other language except hungary?</Question>
+    <Rule id="multiple language">
+        <Question>Do you speak any other language, than hungarian?</Question>
         <Answer>
             <Selection value="true">
-                <MultipleValue value="yes"/>
+                <SingleValue value="yes"/>
             </Selection>
             <Selection value="false">
-                <MultipleValue value="no"/>
+                <SingleValue value="no"/>
             </Selection>
         </Answer>
     </Rule>
