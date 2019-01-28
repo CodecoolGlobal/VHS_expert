@@ -49,7 +49,7 @@
     </Rule>
     ...
     <Rule id="multiple language">
-        <Question>Do you speak any other language, than hungarian?</Question>
+        <Question>Do you want to see the movie in a foreign language?</Question>
         <Answer>
             <Selection value="true">
                 <SingleValue value="yes"/>
