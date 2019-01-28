@@ -19,7 +19,7 @@
                 <SingleValue value="yes"/>
             </Selection>
             <Selection value="false">
-                <SingleValue value="horror"/>
+                <SingleValue value="no"/>
             </Selection>
         </Answer>
     </Rule>
@@ -28,7 +28,7 @@
         <Question>Want to see blood?</Question>
         <Answer>
             <Selection value="true">
-                <SingleValue value="action"/>
+                <SingleValue value="yes"/>
             </Selection>
             <Selection value="false">
                 <SingleValue value="no"/>
@@ -40,7 +40,7 @@
         <Question>Are you a girl?</Question>
         <Answer>
             <Selection value="true">
-                <SingleValue value="romantic"/>
+                <SingleValue value="yes"/>
             </Selection>
             <Selection value="false">
                 <SingleValue value="no"/>
@@ -52,7 +52,7 @@
         <Question>Want to go a journey, but you are a lazy dumbass?</Question>
         <Answer>
             <Selection value="true">
-                <SingleValue value="adventure"/>
+                <SingleValue value="yes"/>
             </Selection>
             <Selection value="false">
                 <SingleValue value="no"/>
@@ -64,7 +64,7 @@
         <Question>Alright man, do you want to laught?</Question>
         <Answer>
             <Selection value="true">
-                <SingleValue value="comedy"/>
+                <SingleValue value="yes"/>
             </Selection>
             <Selection value="false">
                 <SingleValue value="no"/>
