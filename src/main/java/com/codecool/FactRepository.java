@@ -15,11 +15,12 @@ public class FactRepository {
     }
 
     public void addFact(Fact fact) {
+        
 
     }
 
     public Set<String> getIdSet() {
-
+        throw new UnsupportedOperationException();
     }
 
     public void setFactValueById(String id, boolean value) {
@@ -27,7 +28,7 @@ public class FactRepository {
     }
 
     public boolean getValueById(String id) {
-
+        throw new UnsupportedOperationException();
     }
 
     public Iterator<Fact> getIterator() {

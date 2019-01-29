@@ -16,9 +16,11 @@ import java.util.List;
 
 public abstract class XMLParser {
 
-    public void loadXmlDocument(String xmlPath) throws Exception {
+    public Element loadXmlDocument(String xmlPath) throws Exception {
         Document document = read(xmlPath);
+        Element testElem = getStringField(getElements(document.getParentNode()), "Datas");
 
+        return testElem;
     }
 
     private static Document read(String xmlFile) throws ParserConfigurationException, SAXException, IOException {

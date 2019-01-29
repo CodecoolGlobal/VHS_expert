@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Movies>
     <Movie id="house_of_the_dead">
-        <Description value="House of the Dead"/>
-        <Datas>
+        <Description> House of the Dead</Description>
             <Data id="rating">2.0</Data>
             <Data id="genre">horror</Data>
             <Data id="runtime">90</Data>

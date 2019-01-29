@@ -15,6 +15,6 @@ public class Fact {
 
 
     public String getDescription() {
-
+        return this.description;
     }
 }

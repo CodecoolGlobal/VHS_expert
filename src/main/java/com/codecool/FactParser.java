@@ -16,6 +16,7 @@ public class FactParser extends XMLParser {
         //In the constructor the getFactRepository method is called and
         //the returned FactRepository instance is stored as an instance
         //field.
+        throw new UnsupportedOperationException();
 
     }
 

@@ -6,7 +6,7 @@ public abstract class Value {
     private boolean selectionType;
 
     public List<String> getInputPattern() {
-
+        throw new UnsupportedOperationException();
     }
 
     public boolean getSelectionType() {

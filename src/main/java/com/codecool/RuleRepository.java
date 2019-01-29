@@ -18,19 +18,19 @@ public class RuleRepository {
     }
 
     public Iterator<Question> getIterator() {
-
+        throw new UnsupportedOperationException();
     }
 
     private class QuestionIterator implements Iterator {
 
         @Override
         public boolean hasNext() {
-
+            throw new UnsupportedOperationException();
         }
 
         @Override
         public Object next() {
-
+            throw new UnsupportedOperationException();
         }
     }
 }
