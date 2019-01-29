@@ -8,14 +8,14 @@ import java.util.*;
 //can iterate through the answers later.
 
 public class FactRepository {
-    Fact[] facts = new Fact[5];
+    Fact[] facts = new Fact[10];
 
 
     public FactRepository() {
+
     }
 
     public void addFact(Fact fact) {
-
 
     }
 

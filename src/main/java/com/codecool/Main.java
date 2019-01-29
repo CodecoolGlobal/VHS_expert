@@ -1,5 +1,7 @@
 package com.codecool;
 
+import java.util.ArrayList;
+
 public class Main {
 
     public static void main(String[] args) throws Exception {
@@ -10,8 +12,13 @@ public class Main {
 
         //rparser.loadXmlDocument("src/resources/rules.xml");
 
-        System.out.println(fparser.loadXmlDocument("src/resources/facts.xml"));
-        
+        ArrayList<String[]> toprintTest = fparser.loadXmlDocument("src/resources/facts.xml");
+        for(String[] test : toprintTest) {
+            for(String testString : test) {
+                System.out.println(testString);
+            }
+        }
+
 
     }
 

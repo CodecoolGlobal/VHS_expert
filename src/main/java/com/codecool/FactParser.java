@@ -8,6 +8,7 @@ package com.codecool;
 //id to the FactRepository instance. This is stored in a Map
 //inside the FactRepository (as a field instance).
 
+import java.util.ArrayList;
 import java.util.Iterator;
 
 public class FactParser extends XMLParser {
@@ -19,7 +20,17 @@ public class FactParser extends XMLParser {
         throw new UnsupportedOperationException();
 
     }
-
+    public FactRepository makeObj(ArrayList<String[]> moviecollection){
+        FactRepository movies = new FactRepository();
+        for(String[] list : moviecollection){
+            movies.addFact(new Fact(list[0], list[1], Double.parseDouble(list[2]) ,list[3].split(","), Integer.parseInt(list[4]),Boolean.valueOf(list[5]), Boolean.valueOf(list[6])));
+        }
+        return movies;
+    }
+    /*csináljobjektet() {
+        for(String[] lista : ArrayList<String[]>) {
+            FactRepository.addFact(new Fact(lista[0], lista[1] ));
+        }*/
 
 
 }
