@@ -11,9 +11,8 @@ package com.codecool;
 public class RuleParser extends XMLParser {
     private RuleRepository rulerepo;
 
+
     public RuleRepository getRuleRepository() {
-        //In the constructor the getRuleRepository method is called and
-        //the returned RuleRepository instance is stored as an instance
-        //field.
+        throw new UnsupportedOperationException();
     }
 }

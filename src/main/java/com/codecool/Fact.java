@@ -12,19 +12,9 @@ public class Fact {
         this.description = description;
     }
 
-    public Set<String> getIdSet() {
 
-    }
-
-    public void setFactValueById(String id, boolean value) {
-
-    }
-
-    public boolean getValueById(String id) {
-
-    }
 
     public String getDescription() {
-
+        return this.description;
     }
 }

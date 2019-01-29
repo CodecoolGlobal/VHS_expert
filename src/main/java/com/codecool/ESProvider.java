@@ -27,6 +27,10 @@ public class ESProvider {
     public ESProvider(FactParser factParser, RuleParser ruleparser) {
         this.factParser = factParser;
         this.ruleParser = ruleparser;
+        //In the constructor the getRuleRepository method is called and
+        //the returned RuleRepository instance is stored as an instance
+        //field.
+        RuleRepository ruleRepo = ruleparser.getRuleRepository();
     }
 
     public void collectAnswers() {
@@ -34,6 +38,7 @@ public class ESProvider {
     }
 
     public boolean getAnswerByQuestion(String questionId) {
+        throw new UnsupportedOperationException();
 
     }
 
@@ -43,5 +48,8 @@ public class ESProvider {
         //then the answer it returns will be the description of the Fact
         //otherwise null. If the return value is null then an answer couldn't
         //be found by the expert system (maybe it needs more rules, or facts, etc.).
+
+        throw new UnsupportedOperationException();
+
     }
 }

@@ -9,24 +9,28 @@ import java.util.Iterator;
 
 public class RuleRepository {
 
+    public RuleRepository() {
+        QuestionIterator questIt = new QuestionIterator();
+    }
+
     public void addQuestion(Question question) {
 
     }
 
     public Iterator<Question> getIterator() {
-
+        throw new UnsupportedOperationException();
     }
 
-    public class QuestionIterator implements Iterator {
+    private class QuestionIterator implements Iterator {
 
         @Override
         public boolean hasNext() {
-
+            throw new UnsupportedOperationException();
         }
 
         @Override
         public Object next() {
-
+            throw new UnsupportedOperationException();
         }
     }
 }

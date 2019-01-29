@@ -1,6 +1,6 @@
 package com.codecool;
 
-import java.util.Iterator;
+import java.util.*;
 
 
 //The FactRepository constructor initializes the FactIterator
@@ -8,25 +8,52 @@ import java.util.Iterator;
 //can iterate through the answers later.
 
 public class FactRepository {
+    Fact[] facts = new Fact[5];
+
+
+    public FactRepository() {
+    }
 
     public void addFact(Fact fact) {
 
+
+    }
+
+    public Set<String> getIdSet() {
+        throw new UnsupportedOperationException();
+    }
+
+    public void setFactValueById(String id, boolean value) {
+
+    }
+
+    public boolean getValueById(String id) {
+        throw new UnsupportedOperationException();
     }
 
     public Iterator<Fact> getIterator() {
-
+        return new FactIterator();
     }
 
-    public class FactIterator implements Iterator {
+    private class FactIterator implements Iterator {
+        private int pointer = 0;
 
         @Override
         public boolean hasNext() {
-
+            if(pointer < facts.length) {
+                return true;
+            } else {
+                return false;
+            }
         }
 
         @Override
-        public Object next() {
-
+        public Fact next() {
+            if(this.hasNext()) {
+                return facts[pointer++];
+            } else {
+                return null;
+            }
         }
     }
 }
