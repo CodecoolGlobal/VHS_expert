@@ -12,6 +12,7 @@ public class FactRepository {
 
 
     public FactRepository() {
+
     }
 
     public void addFact(Fact fact) {

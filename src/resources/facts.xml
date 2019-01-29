@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Movies>
     <Movie id="house_of_the_dead">
-        <description>"House of the Dead"</description>
+        <description>House of the Dead</description>
 		<rating>2.0</rating>
 		<genre>horror</genre>
 		<runtime>90</runtime>
@@ -10,7 +10,7 @@
     </Movie>
     ...
     <Movie id="disaster_movie">
-        <description>"Disaster Moviedescription></description>
+        <description>Disaster Moviedescription</description>
 		<rating>1.9</rating>
 		<genre>comedy</genre>
 		<runtime>87</runtime>
@@ -19,7 +19,7 @@
     </Movie>
 	...
     <Movie id="jaws_the_revenge">
-        <description>"Jaws: The Revenge></description>
+        <description>Jaws: The Revenge</description>
 		<rating>2.9</rating>
 		<genre>adventure,horror,thriller</genre>
 		<runtime>89</runtime>
@@ -73,7 +73,7 @@
     </Movie>
 	...
     <Movie id="jurassic_park">
-        <description>Jurassic Park"</description>
+        <description>Jurassic Park</description>
 		<rating>8.1</rating>
 		<genre>adventure,thriller,scifi</genre>
 		<runtime>127</runtime>
