@@ -1,6 +1,7 @@
 package com.codecool;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Question {
     private String id;
@@ -29,5 +30,18 @@ public class Question {
 
     }
 
+    private void getAnswer() {
+        Scanner reader = new Scanner(System.in);
+        System.out.println(question);
+        String choice = reader.nextLine();
+        if(trues.contains(choice)) {
+            answer = true;
+        } else if(falses.contains(choice)) {
+            answer = false;
+        } else {
+            System.out.println("There is no such option!");
+            getAnswer();
+        }
 
+    }
 }
