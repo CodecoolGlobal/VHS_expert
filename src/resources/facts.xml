@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Movies>
+    <Movie id="house_of_the_dead">
+        <Description value="House of the Dead"/>
+        <Datas>
+            <Data id="rating">2.0</Data>
+            <Data id="genre">horror</Data>
+            <Data id="runtime">90</Data>
+            <Data id="animation">false</Data>
+	    <Data id="multiple language">false</Data>
+        </Datas>
+    </Movie>
+    ...
+    <Movie id="disaster_movie">
+        <Description value="Disaster Movie"/>
+        <Datas>
+            <Data id="rating">1.9</Data>
+            <Data id="genre">comedy</Data>
+            <Data id="runtime">87</Data>
+            <Data id="animation">false</Data>
+	    <Data id="multiple language">true</Data>
+        </Datas>
+    </Movie>
+    ...
+    <Movie id="jaws_the_revenge">
+        <Description value="Jaws: The Revenge"/>
+        <Datas>
+            <Data id="rating">2.9</Data>
+            <Data id="genre">adventure,horror,thriller</Data>
+            <Data id="runtime">89</Data>
+            <Data id="animation">false</Data>
+	    <Data id="multiple language">true</Data>
+        </Datas>
+    </Movie>
+    ...
+    <Movie id="hercules_in_new_york">
+        <Description value="Hercules in New York"/>
+        <Datas>
+            <Data id="rating">3.2</Data>
+            <Data id="genre">adventure,family,fantasy</Data>
+            <Data id="runtime">75</Data>
+            <Data id="animation">false</Data>
+	    <Data id="multiple language">true</Data>
+        </Datas>
+    </Movie>
+    ...
+    <Movie id="the_emoji_movie">
+        <Description value="The Emoji Movie"/>
+        <Datas>
+            <Data id="rating">3.2</Data>
+            <Data id="genre">adventure,comedy</Data>
+            <Data id="runtime">86</Data>
+            <Data id="animation">true</Data>
+	    <Data id="multiple language">true</Data>
+        </Datas>
+    </Movie>
+	...
+    <Movie id="the_godfather">
+        <Description value="The Godfather"/>
+        <Datas>
+            <Data id="rating">9.2</Data>
+            <Data id="genre">crime,drama</Data>
+            <Data id="runtime">175</Data>
+            <Data id="animation">false</Data>
+	    <Data id="multiple language">true</Data>
+        </Datas>
+    </Movie>
+	...
+    <Movie id="tlotr">
+        <Description value="The Lord of the Rings: The Return of the King"/>
+        <Datas>
+            <Data id="rating">8.9</Data>
+            <Data id="genre">adventure,drama,fantasy</Data>
+            <Data id="runtime">175</Data>
+            <Data id="animation">false</Data>
+	    <Data id="multiple language">true</Data>
+        </Datas>
+    </Movie>
+	...
+    <Movie id="the_lion_king">
+        <Description value="The Lion King"/>
+        <Datas>
+            <Data id="rating">8.5</Data>
+            <Data id="genre">adventure,drama</Data>
+            <Data id="runtime">88</Data>
+            <Data id="animation">true</Data>
+	    <Data id="multiple language">true</Data>
+        </Datas>
+    </Movie>
+	...
+    <Movie id="jurassic_park">
+        <Description value="Jurassic Park"/>
+        <Datas>
+            <Data id="rating">8.1</Data>
+            <Data id="genre">adventure,thriller,scifi</Data>
+            <Data id="runtime">127</Data>
+            <Data id="animation">false</Data>
+	    <Data id="multiple language">true</Data>
+        </Datas>
+    </Movie>
+	...
+    <Movie id="inside_out">
+        <Description value="Inside Out "/>
+        <Datas>
+            <Data id="rating">8.2</Data>
+            <Data id="genre">adventure,comedy</Data>
+            <Data id="runtime">95</Data>
+            <Data id="animation">true</Data>
+	    <Data id="multiple language">true</Data>
+        </Datas>
+    </Movie>
+</Movies>
