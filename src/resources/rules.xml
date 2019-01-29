@@ -16,10 +16,10 @@
         <Question>Want to see family friendly?</Question>
         <Answer>
             <Selection value="true">
-                <MultipleValue value="yes"/>
+                <MultipleValue value="comedy, adventure, family, fantasy, scifi"/>
             </Selection>
             <Selection value="false">
-                <MultipleValue value="no"/>
+                <MultipleValue value="horror, thriller, crime, drama"/>
             </Selection>
         </Answer>
     </Rule>

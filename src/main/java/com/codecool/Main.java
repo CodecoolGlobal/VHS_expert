@@ -11,6 +11,7 @@ public class Main {
         //rparser.loadXmlDocument("src/resources/rules.xml");
 
         System.out.println(fparser.loadXmlDocument("src/resources/facts.xml"));
+        
 
     }
 
