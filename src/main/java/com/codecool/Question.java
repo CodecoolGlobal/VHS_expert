@@ -1,14 +1,18 @@
 package com.codecool;
 
+import java.util.ArrayList;
+
 public class Question {
     private String id;
     private String question;
-    private Answer answer;
+    private ArrayList<String> trues;
+    private ArrayList<String> falses;
+    private boolean answer;
 
-    public Question(String id, String question, Answer answer) {
+    public Question(String id, String question) {
         this.id = id;
         this.question = question;
-        this.answer = answer;
+
     }
 
     public String getId() {
@@ -19,12 +23,11 @@ public class Question {
         return this.question;
     }
 
-    public Answer getAnswer() {
-        return this.answer;
-    }
 
     public boolean getEvaluatedAnswer(String input) {
         throw new UnsupportedOperationException();
 
     }
+
+
 }

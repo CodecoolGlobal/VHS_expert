@@ -13,6 +13,12 @@ import java.util.Iterator;
 
 public class FactParser extends XMLParser {
 
+
+    public FactParser() {
+        searchFor = "Movie";
+        arrLen = 6;
+    }
+
     public FactRepository getFactRepository() {
         //In the constructor the getFactRepository method is called and
         //the returned FactRepository instance is stored as an instance
@@ -20,6 +26,7 @@ public class FactParser extends XMLParser {
         throw new UnsupportedOperationException();
 
     }
+
     public FactRepository makeObj(ArrayList<String[]> moviecollection){
         FactRepository movies = new FactRepository();
         for(String[] list : moviecollection){
@@ -27,10 +34,6 @@ public class FactParser extends XMLParser {
         }
         return movies;
     }
-    /*csináljobjektet() {
-        for(String[] lista : ArrayList<String[]>) {
-            FactRepository.addFact(new Fact(lista[0], lista[1] ));
-        }*/
 
 
 }
