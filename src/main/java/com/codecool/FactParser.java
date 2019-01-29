@@ -4,7 +4,7 @@ package com.codecool;
 //the corresponding XML files ( Rules.xml and Facts.xml ).
 
 
-//The FactParser adds the answers with their corresponding
+//The FactParser adds the options with their corresponding
 //id to the FactRepository instance. This is stored in a Map
 //inside the FactRepository (as a field instance).
 

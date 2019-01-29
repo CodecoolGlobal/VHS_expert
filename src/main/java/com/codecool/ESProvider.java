@@ -27,6 +27,9 @@ public class ESProvider {
     public ESProvider(FactParser factParser, RuleParser ruleparser) {
         this.factParser = factParser;
         this.ruleParser = ruleparser;
+        //In the constructor the getRuleRepository method is called and
+        //the returned RuleRepository instance is stored as an instance
+        //field.
     }
 
     public void collectAnswers() {

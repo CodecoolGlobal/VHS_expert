@@ -9,6 +9,10 @@ import java.util.Iterator;
 
 public class RuleRepository {
 
+    public RuleRepository() {
+        QuestionIterator questIt = new QuestionIterator();
+    }
+
     public void addQuestion(Question question) {
 
     }
@@ -17,7 +21,7 @@ public class RuleRepository {
 
     }
 
-    public class QuestionIterator implements Iterator {
+    private class QuestionIterator implements Iterator {
 
         @Override
         public boolean hasNext() {
