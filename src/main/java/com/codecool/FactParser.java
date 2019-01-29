@@ -20,6 +20,10 @@ public class FactParser extends XMLParser {
 
     }
 
-
+    csináljobjektet() {
+        for(String[] lista : ArrayList<String[]>) {
+            FactRepository.addFact(new Fact(lista[0], lista[1] ))
+        }
+    }
 
 }
