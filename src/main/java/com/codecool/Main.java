@@ -6,5 +6,7 @@ public class Main {
         FactParser fparser = new FactParser();
         RuleParser rparser = new RuleParser();
         ESProvider exsys = new ESProvider(fparser, rparser);
+        fparser.loadXmlDocument();
+
     }
 }
