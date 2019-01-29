@@ -15,6 +15,9 @@ import org.xml.sax.SAXException;
 
 public abstract class XMLParser {
 
+    protected String searchFor;
+    protected int arrLen;
+
     public ArrayList<String[]> loadXmlDocument(String xmlPath) throws ParserConfigurationException, SAXException, IOException
     {
 
@@ -33,17 +36,17 @@ public abstract class XMLParser {
         System.out.println(root.getNodeName());
 
         //Get all employees
-        NodeList nList = document.getElementsByTagName("Movie");
+        NodeList nList = document.getElementsByTagName(searchFor);
         System.out.println("============================");
 
         return visitChildNodes(nList);
     }
 
     //This function is called recursively
-    private static ArrayList<String[]> visitChildNodes(NodeList nList)
+    private ArrayList<String[]> visitChildNodes(NodeList nList)
     {
         ArrayList<String[]> objectList = new ArrayList<String[]>();
-        String[] nodeStringList = new String[6];
+        String[] nodeStringList = new String[arrLen];
         for (int temp = 0; temp < nList.getLength(); temp++)
         {
             Node node = nList.item(temp);

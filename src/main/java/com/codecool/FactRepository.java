@@ -8,14 +8,14 @@ import java.util.*;
 //can iterate through the answers later.
 
 public class FactRepository {
-    Fact[] facts = new Fact[10];
+    ArrayList<Fact> facts = new ArrayList<Fact>();
 
 
     public FactRepository() {
     }
 
     public void addFact(Fact fact) {
-
+        facts.add(fact);
 
     }
 
@@ -40,7 +40,7 @@ public class FactRepository {
 
         @Override
         public boolean hasNext() {
-            if(pointer < facts.length) {
+            if(pointer < facts.size()) {
                 return true;
             } else {
                 return false;
@@ -50,7 +50,7 @@ public class FactRepository {
         @Override
         public Fact next() {
             if(this.hasNext()) {
-                return facts[pointer++];
+                return facts.get(pointer++);
             } else {
                 return null;
             }
