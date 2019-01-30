@@ -7,17 +7,12 @@ public class Main {
     public static void main(String[] args) throws Exception {
         FactParser fparser = new FactParser();
         RuleParser rparser = new RuleParser();
-        ESProvider exsys = new ESProvider(fparser, rparser);
+        //ESProvider exsys = new ESProvider(fparser, rparser);
+        rparser.getRulerepo().getAllAnswers();
 
 
-        //rparser.loadXmlDocument("src/resources/rules.xml");
 
-        ArrayList<String[]> toprintTest = fparser.loadXmlDocument("src/resources/facts.xml");
-        for(String[] test : toprintTest) {
-            for(String testString : test) {
-                System.out.println(testString);
-            }
-        }
+
 
     }
 

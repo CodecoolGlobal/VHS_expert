@@ -18,7 +18,7 @@ public abstract class XMLParser {
     protected String searchFor;
     protected int arrLen;
 
-    public ArrayList<String[]> loadXmlDocument(String xmlPath) throws ParserConfigurationException, SAXException, IOException
+    protected ArrayList<String[]> loadXmlDocument(String xmlPath) throws ParserConfigurationException, SAXException, IOException
     {
 
         //Get Document Builder

@@ -30,7 +30,7 @@ public class ESProvider {
         //In the constructor the getRuleRepository method is called and
         //the returned RuleRepository instance is stored as an instance
         //field.
-        RuleRepository ruleRepo = ruleparser.getRuleRepository();
+        //RuleRepository ruleRepo = ruleparser.getRuleRepository();
 
     }
 
