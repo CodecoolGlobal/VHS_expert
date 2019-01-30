@@ -13,6 +13,7 @@ import java.util.Iterator;
 
 public class FactParser extends XMLParser {
     private ArrayList<String[]> facts;
+    private FactRepository movies;
 
     public FactParser() throws Exception {
         searchFor = "Movie";
@@ -24,17 +25,19 @@ public class FactParser extends XMLParser {
 
 
     public FactRepository getFactRepository() {
-        return new FactRepository();
+        return this.movies;
 
     }
 
     private FactRepository makeObj(){
-        FactRepository movies = new FactRepository();
+        this.movies = new FactRepository();
         for(String[] list : facts){
             movies.addFact(new Fact(list[0].trim(), list[1].trim(), Double.parseDouble(list[2].trim()) ,list[3].trim().split(","), Integer.parseInt(list[4].trim()),Boolean.valueOf(list[5].trim()), Boolean.valueOf(list[6].trim())));
         }
         return movies;
     }
 
-
+    public FactRepository getMovies() {
+        return movies;
+    }
 }

@@ -32,6 +32,10 @@ public class Question {
 
     }
 
+    public boolean isTrue() {
+        return this.answer;
+    }
+
     public void getAnswer() {
         Scanner reader = new Scanner(System.in);
         System.out.println(question);

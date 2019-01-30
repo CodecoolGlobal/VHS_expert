@@ -1,5 +1,6 @@
 package com.codecool;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Set;
 
@@ -11,6 +12,7 @@ public class Fact {
     private int playtime;
     private boolean animation;
     private boolean multilang;
+    private boolean include;
 
 
     public Fact(String id, String description, double rating, String[] genres, int playtime, boolean animation, boolean multilang) {
@@ -21,6 +23,11 @@ public class Fact {
         this.playtime = playtime;
         this.animation = animation;
         this.multilang = multilang;
+        this.include = true;
+    }
+
+    public void setInclude(boolean include) {
+        this.include = include;
     }
 
     public String getId(){
@@ -51,6 +58,10 @@ public class Fact {
         return this.multilang;
     }
 
+    public boolean isInclude() {
+        return include;
+    }
+
     //Special methods:
     public boolean isHighRated(){
         if (this.rating >= 5.0){
@@ -62,15 +73,24 @@ public class Fact {
     }
 
     public boolean isFamilyFriendy(){
-        String[] notFamilyFriendly = new String[] {"horror","drama","thriller","crime"};
-
-        for (int i = 0; i < notFamilyFriendly.length; i++){
+        //String[] notFamilyFriendly =  {"horror","drama","thriller","crime"};
+        /*ArrayList<String> nonFamilyFriendly = new ArrayList<String>();
+        nonFamilyFriendly.add("horror");
+        nonFamilyFriendly.add("drama");
+        */
+        String nonFamily = "horrordramathrillercrime";
+        for(String genre : genres) {
+            if(nonFamily.contains(genre)){
+                return false;
+            }
+        }
+        /*for (int i = 0; i < notFamilyFriendly.length; i++){
             for (int j =0; j < this.genres.length; j++){
                 if (notFamilyFriendly[i].equals(this.genres[j])){
                     return false;
                 }
             }
-        }
+        }*/
         return true;
     }
 
@@ -84,14 +104,13 @@ public class Fact {
 
     @Override
     public String toString() {
-        return "Fact{" +
-            "id='" + id + '\'' +
-            ", description='" + description + '\'' +
-            ", rating=" + rating +
-            ", genres=" + Arrays.toString(genres) +
-            ", playtime=" + playtime +
-            ", animation=" + animation +
-            ", multilang=" + multilang +
-            '}';
+        return
+            description + "\n" +
+            rating + "\n" +
+            Arrays.toString(genres) + "\n" +
+            playtime + "\n" +
+            animation + "\n" +
+            multilang + "\n\n"
+            ;
     }
 }
