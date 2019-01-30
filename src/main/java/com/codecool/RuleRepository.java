@@ -1,5 +1,6 @@
 package com.codecool;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 
 
@@ -8,13 +9,14 @@ import java.util.Iterator;
 //can iterate through the questions later.
 
 public class RuleRepository {
+    ArrayList<Question> questions = new ArrayList<Question>();
 
     public RuleRepository() {
         QuestionIterator questIt = new QuestionIterator();
     }
 
     public void addQuestion(Question question) {
-
+        questions.add(question);
     }
 
     public Iterator<Question> getIterator() {
