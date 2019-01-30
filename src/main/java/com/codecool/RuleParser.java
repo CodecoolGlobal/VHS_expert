@@ -25,7 +25,7 @@ public class RuleParser extends XMLParser {
     public RuleParser() throws Exception{
             searchFor = "Rule";
             arrLen = 3;
-           this.rules = loadXmlDocument("./src/resources/rules.xml");
+           this.rules = loadXmlDocument("src/resources/rules.xml");
            makeObj();
     }
 
