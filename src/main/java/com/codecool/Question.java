@@ -10,9 +10,11 @@ public class Question {
     private ArrayList<String> falses;
     private boolean answer;
 
-    public Question(String id, String question) {
+    public Question(String id, String question, ArrayList<String> trues, ArrayList<String> falses) {
         this.id = id;
         this.question = question;
+        this.trues = trues;
+        this.falses = falses;
 
     }
 
@@ -34,9 +36,9 @@ public class Question {
         Scanner reader = new Scanner(System.in);
         System.out.println(question);
         String choice = reader.nextLine();
-        if(trues.contains(choice)) {
+        if (trues.contains(choice)) {
             answer = true;
-        } else if(falses.contains(choice)) {
+        } else if (falses.contains(choice)) {
             answer = false;
         } else {
             System.out.println("There is no such option!");
@@ -44,4 +46,5 @@ public class Question {
         }
 
     }
+
 }
