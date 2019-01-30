@@ -1,5 +1,6 @@
 package com.codecool;
 
+import java.util.Arrays;
 import java.util.Set;
 
 public class Fact {
@@ -73,12 +74,24 @@ public class Fact {
         return true;
     }
 
-    public boolean isLongMovie(){
-        if (this.playtime >= 90 ){
+    public boolean isLongMovie() {
+        if (this.playtime >= 90) {
             return true;
-        }
-        else{
+        } else {
             return false;
         }
+    }
+
+    @Override
+    public String toString() {
+        return "Fact{" +
+            "id='" + id + '\'' +
+            ", description='" + description + '\'' +
+            ", rating=" + rating +
+            ", genres=" + Arrays.toString(genres) +
+            ", playtime=" + playtime +
+            ", animation=" + animation +
+            ", multilang=" + multilang +
+            '}';
     }
 }
