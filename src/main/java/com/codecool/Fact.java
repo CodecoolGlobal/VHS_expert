@@ -13,14 +13,14 @@ public class Fact {
     private boolean multilang;
 
 
-    public Fact(String id, String description, double rating, String[] genres, int playtime, boolean animation, boolean multlang) {
+    public Fact(String id, String description, double rating, String[] genres, int playtime, boolean animation, boolean multilang) {
         this.id = id;
         this.description = description;
         this.rating = rating;
         this.genres = genres;
         this.playtime = playtime;
         this.animation = animation;
-        this.multilang = multlang;
+        this.multilang = multilang;
     }
 
     public String getId(){

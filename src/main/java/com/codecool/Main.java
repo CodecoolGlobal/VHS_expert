@@ -10,8 +10,9 @@ public class Main {
         //ESProvider exsys = new ESProvider(fparser, rparser);
         rparser.getRulerepo().getAllAnswers();
 
-
-
+        
+        Menu mn = new Menu();
+        mn.program_menu();
 
 
     }
