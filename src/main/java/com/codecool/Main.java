@@ -12,12 +12,15 @@ public class Main {
 
         //rparser.loadXmlDocument("src/resources/rules.xml");
 
-        ArrayList<String[]> toprintTest = fparser.loadXmlDocument("src/resources/facts.xml");
+        /*ArrayList<String[]> toprintTest = fparser.loadXmlDocument("src/resources/facts.xml");
         for(String[] test : toprintTest) {
             for(String testString : test) {
                 System.out.println(testString);
             }
-        }
+        }*/
+
+        Menu mn = new Menu();
+        mn.program_menu();
 
     }
 
