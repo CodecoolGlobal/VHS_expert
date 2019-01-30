@@ -30,7 +30,7 @@ public class Question {
 
     }
 
-    private void getAnswer() {
+    public void getAnswer() {
         Scanner reader = new Scanner(System.in);
         System.out.println(question);
         String choice = reader.nextLine();

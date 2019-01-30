@@ -13,6 +13,7 @@ public class RuleParser extends XMLParser {
 
 
     public RuleRepository getRuleRepository() {
-        throw new UnsupportedOperationException();
+        return new RuleRepository();
+
     }
 }

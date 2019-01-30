@@ -20,10 +20,7 @@ public class FactParser extends XMLParser {
     }
 
     public FactRepository getFactRepository() {
-        //In the constructor the getFactRepository method is called and
-        //the returned FactRepository instance is stored as an instance
-        //field.
-        throw new UnsupportedOperationException();
+        return new FactRepository();
 
     }
 

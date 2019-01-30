@@ -1,5 +1,6 @@
 package com.codecool;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 
 
@@ -8,29 +9,46 @@ import java.util.Iterator;
 //can iterate through the questions later.
 
 public class RuleRepository {
+    ArrayList<Question> questions = new ArrayList<Question>();
 
     public RuleRepository() {
-        QuestionIterator questIt = new QuestionIterator();
+
     }
 
     public void addQuestion(Question question) {
-
+        questions.add(question);
     }
 
-    public Iterator<Question> getIterator() {
-        throw new UnsupportedOperationException();
+    public void getAllAnswers() {
+        RuleIterator ruler = new RuleIterator();
+        while(ruler.hasNext()) {
+            ruler.next().getAnswer();
+        }
     }
 
-    private class QuestionIterator implements Iterator {
+    private class RuleIterator implements Iterator {
+        private int pointer = 0;
 
         @Override
         public boolean hasNext() {
-            throw new UnsupportedOperationException();
+            if(pointer < questions.size()) {
+                return true;
+            } else {
+                return false;
+            }
         }
 
         @Override
-        public Object next() {
-            throw new UnsupportedOperationException();
+        public Question next() {
+            if(this.hasNext()) {
+                return questions.get(pointer++);
+            } else {
+                return null;
+            }
         }
+    }
+
+    public ArrayList<Question> getQuestions() {
+        return this.questions;
     }
 }
