@@ -1,4 +1,5 @@
 package com.codecool;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Menu {
@@ -16,24 +17,27 @@ public class Menu {
     }
 
 
-    public void program_menu() {
+    public void program_menu(RuleParser ruleParser) {
         int option = 0;
+        int choice = 0;
         do{
             String[] list = {"Exit Program", "Films by Language", "Films by rating", "All films", "Films by category", "Films by length"};
             display_menu(list);
             getInput(list);
             Scanner search = new Scanner(System.in);
-            Scanner ans = new Scanner(System.in);
             option = search.nextInt();
+
             switch(option){
                 case 0:
                     System.exit(0);
                 case 1:
                     System.out.println("\nWhat kind of language do you want to watch movie? 1.Hungarian 2.Foreign\n");
-                    if(ans.nextInt() == 1){
+
+                    choice = search.nextInt();
+                    if(choice == 1){
                         System.out.println("\nI need a list from Attila\n");
                         break;
-                    } else if(ans.nextInt() == 2){
+                    } else if(choice == 2){
                         System.out.println("\nI need a list from Attila\n");
                         break;
                     }
@@ -43,10 +47,11 @@ public class Menu {
                     }
                 case 2:
                     System.out.println("\nWhat kind of rating movie do you want to watch? 1.High rating 2.Low rating\n");
-                    if(ans.nextInt() == 1){
+                    choice = search.nextInt();
+                    if(choice == 1){
                         System.out.println("\nI need a list from Attila\n");
                         break;
-                    } else if(ans.nextInt() == 2){
+                    } else if(choice == 2){
                         System.out.println("\nI need a list from Attila\n");
                         break;
                     }
@@ -59,10 +64,11 @@ public class Menu {
                     break;
                 case 4:
                     System.out.println("\nWhat kind of category movie want to watch?\n");
-                    if(ans.nextInt() == 1){
+                    choice = search.nextInt();
+                    if(choice == 1){
                         System.out.println("\nI need a list from Attila\n");
                         break;
-                    } else if(ans.nextInt() == 2){
+                    } else if(choice == 2){
                         System.out.println("\nI need a list from Attila\n");
                         break;
                     }
@@ -72,10 +78,11 @@ public class Menu {
                     }
                 case 5:
                     System.out.println("\nHow many time you want to lose with the movie? 1.Not so many 2.I have as much time as ocean\n");
-                    if(ans.nextInt() == 1){
+                    choice = search.nextInt();
+                    if(choice == 1){
                         System.out.println("\nI need a list from Attila\n");
                         break;
-                    } else if(ans.nextInt() == 2){
+                    } else if(choice == 2){
                         System.out.println("\nI need a list from Attila\n");
                         break;
                     }
@@ -83,6 +90,8 @@ public class Menu {
                         System.out.println("\nWhy you can't choose from the choices?\n");
                         break;
                     }
+                case 6:
+                    ruleParser.getRulerepo().getAllAnswers();
                 default:
                     System.out.println("\nInvalid option! \n");
             }
