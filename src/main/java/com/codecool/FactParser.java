@@ -30,7 +30,5 @@ public class FactParser extends XMLParser {
         return movies;
     }
 
-    public FactRepository getMovies() {
-        return movies;
-    }
+
 }

@@ -17,11 +17,6 @@ public class FactRepository {
     }
 
 
-    public void setFactValueById(String id, boolean value) {
-
-    }
-
-
     public Iterator<Fact> getIterator() {
         return new FactIterator();
     }
