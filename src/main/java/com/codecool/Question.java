@@ -27,11 +27,6 @@ public class Question {
     }
 
 
-    public boolean getEvaluatedAnswer(String input) {
-        throw new UnsupportedOperationException();
-
-    }
-
     public boolean isTrue() {
         return this.answer;
     }
@@ -48,7 +43,5 @@ public class Question {
             System.out.println("There is no such option!");
             getAnswer();
         }
-
     }
-
 }

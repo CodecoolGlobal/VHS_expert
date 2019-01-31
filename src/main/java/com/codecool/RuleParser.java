@@ -1,17 +1,5 @@
 package com.codecool;
 
-//These parsers are to be used to interpret
-//the corresponding XML files ( Rules.xml and Facts.xml ).
-
-
-//The RuleParser adds the questions with their corresponding
-//id to the RuleRepository instance. This is stored in a Map
-// inside the RuleRepository (as a field instance).
-
-import org.xml.sax.SAXException;
-
-import javax.xml.parsers.ParserConfigurationException;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 

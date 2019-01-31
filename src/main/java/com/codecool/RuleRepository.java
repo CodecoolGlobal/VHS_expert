@@ -4,10 +4,6 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 
-//The RuleRepository constructor initializes the QuestionIterator
-//inner class that implements the Iterator interface. With this we
-//can iterate through the questions later.
-
 public class RuleRepository {
     ArrayList<Question> questions = new ArrayList<Question>();
 

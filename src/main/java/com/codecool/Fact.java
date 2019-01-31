@@ -1,8 +1,5 @@
 package com.codecool;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Set;
 
 public class Fact {
     private String id;
@@ -73,24 +70,13 @@ public class Fact {
     }
 
     public boolean isFamilyFriendy(){
-        //String[] notFamilyFriendly =  {"horror","drama","thriller","crime"};
-        /*ArrayList<String> nonFamilyFriendly = new ArrayList<String>();
-        nonFamilyFriendly.add("horror");
-        nonFamilyFriendly.add("drama");
-        */
+
         String nonFamily = "horrordramathrillercrime";
         for(String genre : genres) {
             if(nonFamily.contains(genre)){
                 return false;
             }
         }
-        /*for (int i = 0; i < notFamilyFriendly.length; i++){
-            for (int j =0; j < this.genres.length; j++){
-                if (notFamilyFriendly[i].equals(this.genres[j])){
-                    return false;
-                }
-            }
-        }*/
         return true;
     }
 

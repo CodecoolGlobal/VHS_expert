@@ -3,10 +3,6 @@ package com.codecool;
 import java.util.*;
 
 
-//The FactRepository constructor initializes the FactIterator
-//inner class that implements the Iterator interface. With this we
-//can iterate through the answers later.
-
 public class FactRepository {
     ArrayList<Fact> facts = new ArrayList<Fact>();
 
@@ -20,17 +16,11 @@ public class FactRepository {
 
     }
 
-    public Set<String> getIdSet() {
-        throw new UnsupportedOperationException();
-    }
 
     public void setFactValueById(String id, boolean value) {
 
     }
 
-    public boolean getValueById(String id) {
-        throw new UnsupportedOperationException();
-    }
 
     public Iterator<Fact> getIterator() {
         return new FactIterator();
@@ -56,8 +46,6 @@ public class FactRepository {
                 return null;
             }
         }
-
-
     }
 
     public ArrayList<Fact> getFacts() {

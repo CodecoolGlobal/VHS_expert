@@ -55,23 +55,6 @@ public abstract class XMLParser {
                 String allNodes = node.getTextContent();
                 nodeStringList = allNodes.split("\n");
                 objectList.add(nodeStringList);
-                /*for(String strNode : nodeStringList) {
-                    System.out.println(strNode);
-                }*/
-                //Check all attributes
-          /*      if (node.hasAttributes()) {
-                    // get attributes names and values
-                    NamedNodeMap nodeMap = node.getAttributes();
-                    for (int i = 0; i < nodeMap.getLength(); i++)
-                    {
-                        Node tempNode = nodeMap.item(i);
-                        System.out.println("Attr name : " + tempNode.getNodeName()+ "; Value = " + tempNode.getNodeValue());
-                    }
-                    if (node.hasChildNodes()) {
-                        //We got more childs; Let's visit them as well
-                        visitChildNodes(node.getChildNodes());
-                    }
-                }*/
             }
         }
         return objectList;
