@@ -56,5 +56,11 @@ public class FactRepository {
                 return null;
             }
         }
+
+
+    }
+
+    public ArrayList<Fact> getFacts() {
+        return facts;
     }
 }
