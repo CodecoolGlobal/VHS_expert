@@ -33,11 +33,11 @@ public abstract class XMLParser {
 
         //Here comes the root node
         Element root = document.getDocumentElement();
-        System.out.println(root.getNodeName());
+
 
         //Get all employees
         NodeList nList = document.getElementsByTagName(searchFor);
-        System.out.println("============================");
+
 
         return visitChildNodes(nList);
     }

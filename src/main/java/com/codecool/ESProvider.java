@@ -38,8 +38,8 @@ public class ESProvider {
 
     public void collectAnswers(ArrayList<Fact> facts, ArrayList<Question> questions) {
         for (Fact fact : facts) {
-            if (fact.isHighRated() != questions.get(0).isTrue() || fact.isFamilyFriendy() != questions.get(1).isTrue() || fact.isLongMovie() != questions.get(2).isTrue() || fact.isAnimation() != questions.get(3).isTrue() || fact.isMultilang() != questions.get(4).isTrue()) {
-                fact.setInclude(false);
+            if (fact.isHighRated() == questions.get(0).isTrue() && fact.isFamilyFriendy() == questions.get(1).isTrue() && fact.isLongMovie() == questions.get(2).isTrue() && fact.isAnimation() == questions.get(3).isTrue() && fact.isMultilang() == questions.get(4).isTrue()) {
+                System.out.println(fact.toString());
             }
         }
     }

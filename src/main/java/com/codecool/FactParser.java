@@ -18,7 +18,7 @@ public class FactParser extends XMLParser {
     public FactParser() throws Exception {
         searchFor = "Movie";
         arrLen = 6;
-        this.facts = loadXmlDocument("./src/resources/facts.xml");
+        this.facts = loadXmlDocument("src/resources/facts.xml");
         makeObj();
     }
 

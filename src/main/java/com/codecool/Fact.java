@@ -105,12 +105,36 @@ public class Fact {
     @Override
     public String toString() {
         return
-            description + "\n" +
-            rating + "\n" +
-            Arrays.toString(genres) + "\n" +
-            playtime + "\n" +
-            animation + "\n" +
-            multilang + "\n\n"
+            "Title: " + description + "\n" +
+            "Rating: " + rating + "\n" +
+            "Genre(s): " + genreString() + "\n" +
+            "Playtime (in minutes): " + playtime + "\n" +
+            "Animated movie? " + animString() + "\n" +
+            "Available in multiple languages? " + langString() + "\n\n"
             ;
+    }
+
+    public String genreString() {
+        String tempStr = "";
+        for(String genre : genres) {
+            tempStr += genre + ", ";
+        }
+        return tempStr;
+    }
+
+    public String animString() {
+        if(isAnimation()) {
+            return "yes";
+        } else {
+            return "no";
+        }
+    }
+
+    public String langString() {
+        if(isMultilang()) {
+            return "yes";
+        } else {
+            return "no";
+        }
     }
 }
