@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Rules>
     <Rule id="rating">
-        <Question>Do you want to watch a high rated movie?</Question>
+        <Question>Would you like to watch a high rated movie?</Question>
         <true>yes</true>
         <false>no</false>
     </Rule>
     ...
     <Rule id="genre">
-        <Question>What genre do you want see see?</Question>
+        <Question>What genre would you like to see?</Question>
         <true>comedy,adventure,family,fantasy,scifi</true>
         <false>horror,drama,thriller,crime</false>
     </Rule>
@@ -19,13 +19,13 @@
     </Rule>
     ...
     <Rule id="animation">
-        <Question>Would you like a live-action movie?</Question>
+        <Question>Would you like to see an animated movie?</Question>
         <true>yes</true>
         <false>no</false>
     </Rule>
     ...
     <Rule id="multiple language">
-        <Question>Do you want to see the movie in a foreign language?</Question>
+        <Question>Would you like to see the movie in a foreign language?</Question>
         <true>yes</true>
         <false>no</false>
     </Rule>

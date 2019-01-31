@@ -20,6 +20,8 @@ package com.codecool;
 //that returned by calling the getFactRepository method of the FactParser.
 //The parsed Facts (parsed by the FactParser ) are added to the FactRepository.
 
+import java.util.ArrayList;
+
 public class ESProvider {
     private FactParser factParser;
     private RuleParser ruleParser;
@@ -34,23 +36,43 @@ public class ESProvider {
 
     }
 
-    public void collectAnswers() {
-
+    public void collectAnswers(ArrayList<Fact> facts, ArrayList<Question> questions) {
+        for (Fact fact : facts) {
+            if (fact.isHighRated() != questions.get(0).isTrue() || fact.isFamilyFriendy() != questions.get(1).isTrue() || fact.isLongMovie() != questions.get(2).isTrue() || fact.isAnimation() != questions.get(3).isTrue() || fact.isMultilang() != questions.get(4).isTrue()) {
+                fact.setInclude(false);
+            }
+        }
     }
 
-    public boolean getAnswerByQuestion(String questionId) {
+    public void listByCriteria(ArrayList<Fact> facts, FactFilter ff) {
+        for(Fact fact : facts) {
+            if(ff.filterFact(fact)){
+                System.out.println(fact.toString());
+            }
+        }
+    }
+    public boolean getAnswerByQuestion() {
         throw new UnsupportedOperationException();
 
     }
 
-    public String evaluate() {
-        //If we call the evaluate method of the ESProvider then it iterates
-        //through the Facts and checks for possible matches. If it finds one
-        //then the answer it returns will be the description of the Fact
-        //otherwise null. If the return value is null then an answer couldn't
-        //be found by the expert system (maybe it needs more rules, or facts, etc.).
+    public void evaluate(ArrayList<Fact> facts) {
+        int x = 0;
+        for(Fact fact : facts) {
+            if(fact.isInclude()) {
+                System.out.println(fact.toString());
+                x++;
+            }
+        }
+        if(x == 0) {
+            System.out.println("\nWe are sorry, but there is no film that matches the given criteria.");
+        } else {
+            System.out.println("The above listed movies were closest to your search criteria.");
+        }
 
-        throw new UnsupportedOperationException();
+    }
 
+    interface FactFilter {
+         boolean filterFact(Fact f);
     }
 }

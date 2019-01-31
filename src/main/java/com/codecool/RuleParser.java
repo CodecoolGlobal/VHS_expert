@@ -22,6 +22,7 @@ public class RuleParser extends XMLParser {
 
 
 
+
     public RuleParser() throws Exception{
             searchFor = "Rule";
             arrLen = 3;
@@ -40,5 +41,6 @@ public class RuleParser extends XMLParser {
         }
         return this.rulerepo;
     }
+
 
 }
