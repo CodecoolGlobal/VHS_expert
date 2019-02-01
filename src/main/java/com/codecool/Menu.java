@@ -3,6 +3,20 @@ import java.util.Scanner;
 
 public class Menu {
 
+    public void display_art(){
+        System.out.println("\\   \\ /   /   |   \\/   _____/   ____ ___  _________   ____________/  |_  ______ _____________   ____   ______ ____   _____/  |_  ______ /\\");
+        System.out.println(" \\   Y   /    ~    \\_____  \\  _/ __ \\\\  \\/  /\\____ \\_/ __ \\_  __ \\   __\\/  ___/ \\____ \\_  __ \\_/ __ \\ /  ___// __ \\ /    \\   __\\/  ___/ \\/");
+        System.out.println("  \\     /\\    Y    /        \\ \\  ___/ >    < |  |_> >  ___/|  | \\/|  |  \\___ \\  |  |_> >  | \\/\\  ___/ \\___ \\\\  ___/|   |  \\  |  \\___ \\  /\\");
+        System.out.println("   \\___/  \\___|_  /_______  /  \\___  >__/\\_ \\|   __/ \\___  >__|   |__| /____  > |   __/|__|    \\___  >____  >\\___  >___|  /__| /____  > \\/");
+        System.out.println("                \\/        \\/       \\/      \\/|__|        \\/                 \\/  |__|               \\/     \\/     \\/     \\/          \\/");
+        System.out.println("                ____   ____.__    .___                       __");
+        System.out.println("                \\   \\ /   /|__| __| _/____  ____     _______/  |_  ___________   ____");
+        System.out.println("                 \\   Y   / |  |/ __ |/ __ \\/  _ \\   /  ___/\\   __\\/  _ \\_  __ \\_/ __ \\");
+        System.out.println("                  \\     /  |  / /_/ \\  ___(  <_> )  \\___ \\  |  | (  <_> )  | \\/\\  ___/");
+        System.out.println("                   \\___/   |__\\____ |\\___  >____/  /____  > |__|  \\____/|__|    \\___  >");
+        System.out.println("                                   \\/    \\/             \\/                          \\/  ");
+    }
+
     public void display_menu(String[] list) {
         int i;
 
@@ -16,9 +30,11 @@ public class Menu {
     }
 
 
-    public void program_menu(RuleParser ruleParser, ESProvider exsys, FactParser fparser) {
+    public void program_menu(RuleParser ruleParser, ESProvider exsys, FactParser fparser) throws Exception{
         int option = 0;
         int choice = 0;
+        display_art();
+        Thread.sleep(500);
         do{
             String[] list = {"Recommend a movie", "All movies", "Movies by language", "Movies by rating",  "Movies by category", "Movies by length", "Live action or animated", "Exit Program"};
             display_menu(list);
